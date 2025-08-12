@@ -27,14 +27,14 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-32 bg-muted/20 overflow-hidden">
+    <section id="services" className="py-32 bg-primary overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Massive section title */}
         <div className="scroll-reveal mb-20">
-          <div className="display-large text-primary text-center mb-8">
+          <div className="display-large text-white text-center mb-8">
             Services
           </div>
-          <p className="editorial-subheading text-muted-foreground max-w-3xl mx-auto text-center">
+          <p className="editorial-subheading text-white/80 max-w-3xl mx-auto text-center">
             Drei bewährte Ansätze für nachhaltigen Recruiting-Erfolg, 
             optimiert für die moderne Arbeitswelt
           </p>
@@ -56,7 +56,7 @@ const Services = () => {
                   <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-interactive group-hover:scale-110 smooth-transition" />
                 </div>
                 
-                <h3 className="font-roc font-bold text-xl text-primary mb-2 group-hover:text-interactive smooth-transition">
+                <h3 className="font-roc font-bold text-xl text-white mb-2 group-hover:text-secondary smooth-transition">
                   {service.title}
                 </h3>
                 
@@ -68,7 +68,7 @@ const Services = () => {
               </CardHeader>
               
               <CardContent>
-                <p className="font-geometric leading-relaxed text-muted-foreground group-hover:text-foreground smooth-transition">
+                <p className="font-geometric leading-relaxed text-white/80 group-hover:text-white smooth-transition">
                   {service.description}
                 </p>
               </CardContent>
@@ -81,7 +81,7 @@ const Services = () => {
 
         {/* Call to action */}
         <div className="text-center mt-16 scroll-reveal">
-          <p className="font-geometric text-muted-foreground mb-8">
+          <p className="font-geometric text-white/80 mb-8">
             Bereit für eine neue Art des Recruitings?
           </p>
           <button className="interactive-button">

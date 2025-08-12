@@ -22,7 +22,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen relative overflow-hidden bg-background">
+    <section className="min-h-screen relative overflow-hidden bg-primary">
       {/* Background animated elements */}
       <div 
         className="absolute top-20 right-20 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"
@@ -49,11 +49,11 @@ const Hero = () => {
             
             {/* Massive display text like Power Digital */}
             <div className="relative scroll-reveal">
-              <h1 className="display-massive uppercase leading-none">
+              <h1 className="display-massive uppercase leading-none text-white">
                 Find
               </h1>
               <div 
-                className="absolute -right-4 top-1/2 -translate-y-1/2 text-2xl md:text-4xl font-geometric text-muted-foreground"
+                className="absolute -right-4 top-1/2 -translate-y-1/2 text-2xl md:text-4xl font-geometric text-white/60"
                 style={{ transform: `translateY(${scrollY * -0.1}px)` }}
               >
                 not search
@@ -61,7 +61,7 @@ const Hero = () => {
             </div>
             
             <div className="scroll-reveal">
-              <p className="editorial-subheading text-muted-foreground max-w-lg mb-8">
+              <p className="editorial-subheading text-white/90 max-w-lg mb-8">
                 Es gibt einen Unterschied zwischen Suchen und Finden. 
                 Wir verbinden Unternehmen mit außergewöhnlichen Talenten durch 
                 präzise Analyse und kulturelle Passung.
@@ -82,35 +82,35 @@ const Hero = () => {
 
           {/* Right: Interactive Content */}
           <div className="relative scroll-reveal">
-            <div className="relative bg-gradient-to-br from-secondary/10 to-interactive/10 rounded-3xl p-12 backdrop-blur-sm border border-border/50 hover-lift">
+            <div className="relative bg-card/50 backdrop-blur-sm rounded-3xl p-12 border border-white/10 hover-lift">
               <div className="space-y-6">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="w-3 h-3 bg-secondary rounded-full animate-pulse" />
-                  <span className="font-geometric text-sm uppercase tracking-wider text-muted-foreground">
+                  <span className="font-geometric text-sm uppercase tracking-wider text-white/70">
                     World-class recruiting
                   </span>
                 </div>
                 
-                <h3 className="display-large text-3xl text-primary mb-6">
+                <h3 className="display-large text-3xl text-white mb-6">
                   A tech-enabled growth recruiting agency
                 </h3>
                 
                 <div className="grid grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <div className="text-3xl font-bold text-interactive">95%</div>
-                    <div className="text-sm text-muted-foreground">Success Rate</div>
+                    <div className="text-3xl font-bold text-secondary">95%</div>
+                    <div className="text-sm text-white/70">Success Rate</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="text-3xl font-bold text-interactive">4 Wo</div>
-                    <div className="text-sm text-muted-foreground">Avg. Time</div>
+                    <div className="text-3xl font-bold text-secondary">4 Wo</div>
+                    <div className="text-sm text-white/70">Avg. Time</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="text-3xl font-bold text-interactive">500+</div>
-                    <div className="text-sm text-muted-foreground">Placements</div>
+                    <div className="text-3xl font-bold text-secondary">500+</div>
+                    <div className="text-sm text-white/70">Placements</div>
                   </div>
                   <div className="space-y-2">
-                    <div className="text-3xl font-bold text-interactive">50+</div>
-                    <div className="text-sm text-muted-foreground">Companies</div>
+                    <div className="text-3xl font-bold text-secondary">50+</div>
+                    <div className="text-sm text-white/70">Companies</div>
                   </div>
                 </div>
               </div>

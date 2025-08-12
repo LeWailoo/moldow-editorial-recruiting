@@ -5,14 +5,14 @@ const About = () => {
   useScrollReveal();
 
   return (
-    <section id="about" className="py-32 bg-background overflow-hidden">
+    <section id="about" className="py-32 bg-primary overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20 scroll-reveal">
-          <div className="display-large text-primary mb-8">
+          <div className="display-large text-white mb-8">
             Mission
           </div>
-          <p className="editorial-subheading text-muted-foreground max-w-3xl mx-auto">
+          <p className="editorial-subheading text-white/80 max-w-3xl mx-auto">
             Bei moldow. verstehen wir, dass außergewöhnliche Unternehmen außergewöhnliche Menschen brauchen
           </p>
         </div>
@@ -21,16 +21,16 @@ const About = () => {
           {/* Left: Content */}
           <div className="space-y-8 scroll-reveal">
             <div className="space-y-6">
-              <h2 className="editorial-heading text-primary text-3xl md:text-4xl">
+              <h2 className="editorial-heading text-white text-3xl md:text-4xl">
                 Unser Ansatz geht über traditionelle Recruiting-Methoden hinaus
               </h2>
               
-              <p className="text-lg text-muted-foreground leading-relaxed">
+              <p className="text-lg text-white/80 leading-relaxed">
                 Wir kombinieren menschliche Intuition mit datengestützten Insights, 
                 um die perfekte Passung zwischen Talent und Kultur zu schaffen.
               </p>
               
-              <p className="font-geometric text-foreground/80 leading-relaxed">
+              <p className="font-geometric text-white/70 leading-relaxed">
                 Unser Team investiert Zeit, um sowohl Ihre Unternehmenskultur als auch 
                 die Aspirationen der Kandidaten tiefgreifend zu verstehen. Das Ergebnis: 
                 nachhaltige Erfolge für beide Seiten.
@@ -38,14 +38,14 @@ const About = () => {
             </div>
 
             {/* Key metrics */}
-            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-border">
+            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/20">
               <div>
                 <div className="text-2xl font-bold text-secondary mb-2">15+ Jahre</div>
-                <div className="text-sm text-muted-foreground">Erfahrung im Executive Search</div>
+                <div className="text-sm text-white/70">Erfahrung im Executive Search</div>
               </div>
               <div>
                 <div className="text-2xl font-bold text-secondary mb-2">98%</div>
-                <div className="text-sm text-muted-foreground">Kandidaten-Zufriedenheit</div>
+                <div className="text-sm text-white/70">Kandidaten-Zufriedenheit</div>
               </div>
             </div>
           </div>

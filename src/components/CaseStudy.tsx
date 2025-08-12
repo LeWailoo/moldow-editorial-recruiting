@@ -5,12 +5,12 @@ const CaseStudy = () => {
   useScrollReveal();
 
   return (
-    <section id="cases" className="py-32 bg-background">
+    <section id="cases" className="py-32 bg-primary">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-20 scroll-reveal">
-            <div className="display-large text-primary mb-8">
+            <div className="display-large text-white mb-8">
               Success
             </div>
           </div>
@@ -20,7 +20,7 @@ const CaseStudy = () => {
             <div className="space-y-8 scroll-reveal">
               <div className="flex items-center gap-3 mb-8">
                 <Quote className="w-8 h-8 text-secondary" />
-                <span className="font-geometric font-semibold text-sm uppercase tracking-wider text-muted-foreground">
+                <span className="font-geometric font-semibold text-sm uppercase tracking-wider text-white/70">
                   Client Story
                 </span>
               </div>
@@ -32,11 +32,11 @@ const CaseStudy = () => {
                   ))}
                 </div>
                 
-                <h3 className="editorial-heading text-3xl md:text-4xl text-primary leading-tight">
+                <h3 className="editorial-heading text-3xl md:text-4xl text-white leading-tight">
                   "In nur 4 Wochen zur perfekten Besetzung einer C-Level Position"
                 </h3>
                 
-                <blockquote className="editorial-subheading text-muted-foreground text-xl leading-relaxed">
+                <blockquote className="editorial-subheading text-white/80 text-xl leading-relaxed">
                   "moldow. hat nicht nur verstanden, was wir suchten, sondern auch, 
                   wer wir als Unternehmen sind. Der gefundene Kandidat übertrifft unsere 
                   Erwartungen und passt perfekt zu unserer Kultur und Vision."
@@ -44,21 +44,21 @@ const CaseStudy = () => {
               </div>
 
               <div className="border-l-4 border-secondary pl-6 bg-secondary/5 py-4 rounded-r-lg">
-                <p className="font-roc font-bold text-primary text-lg">Sarah Müller</p>
-                <p className="font-geometric text-muted-foreground">CEO & Founder, TechInnovate GmbH</p>
-                <p className="font-geometric text-sm text-muted-foreground mt-1">Series B Startup, 150+ Mitarbeiter</p>
+                <p className="font-roc font-bold text-white text-lg">Sarah Müller</p>
+                <p className="font-geometric text-white/70">CEO & Founder, TechInnovate GmbH</p>
+                <p className="font-geometric text-sm text-white/60 mt-1">Series B Startup, 150+ Mitarbeiter</p>
               </div>
             </div>
             
             {/* Right: Metrics & Results */}
             <div className="scroll-reveal">
-              <div className="relative bg-gradient-to-br from-interactive/5 via-secondary/5 to-background rounded-3xl p-12 border border-border/50 hover-lift">
+              <div className="relative bg-gradient-to-br from-interactive/5 via-secondary/5 to-card/20 rounded-3xl p-12 border border-white/10 hover-lift">
                 <div className="space-y-8">
                   <div className="text-center mb-8">
-                    <h4 className="font-roc font-bold text-2xl text-primary mb-2">
+                    <h4 className="font-roc font-bold text-2xl text-white mb-2">
                       Projekt Highlights
                     </h4>
-                    <p className="text-muted-foreground font-geometric">
+                    <p className="text-white/70 font-geometric">
                       CTO-Position für Tech Startup
                     </p>
                   </div>
@@ -66,37 +66,37 @@ const CaseStudy = () => {
                   <div className="grid grid-cols-2 gap-8">
                     <div className="text-center space-y-2">
                       <div className="text-4xl font-bold text-interactive">4</div>
-                      <div className="text-sm text-muted-foreground">Wochen</div>
-                      <div className="text-xs text-muted-foreground">bis zur Zusage</div>
+                      <div className="text-sm text-white/70">Wochen</div>
+                      <div className="text-xs text-white/60">bis zur Zusage</div>
                     </div>
                     <div className="text-center space-y-2">
                       <div className="text-4xl font-bold text-secondary">15</div>
-                      <div className="text-sm text-muted-foreground">Kandidaten</div>
-                      <div className="text-xs text-muted-foreground">vorgestellt</div>
+                      <div className="text-sm text-white/70">Kandidaten</div>
+                      <div className="text-xs text-white/60">vorgestellt</div>
                     </div>
                     <div className="text-center space-y-2">
                       <div className="text-4xl font-bold text-interactive">100%</div>
-                      <div className="text-sm text-muted-foreground">Cultural Fit</div>
-                      <div className="text-xs text-muted-foreground">nach 6 Monaten</div>
+                      <div className="text-sm text-white/70">Cultural Fit</div>
+                      <div className="text-xs text-white/60">nach 6 Monaten</div>
                     </div>
                     <div className="text-center space-y-2">
                       <div className="text-4xl font-bold text-secondary">€</div>
-                      <div className="text-sm text-muted-foreground">ROI</div>
-                      <div className="text-xs text-muted-foreground">bereits nach 3 Mon.</div>
+                      <div className="text-sm text-white/70">ROI</div>
+                      <div className="text-xs text-white/60">bereits nach 3 Mon.</div>
                     </div>
                   </div>
                   
                   {/* Challenge & Solution */}
-                  <div className="space-y-6 pt-8 border-t border-border">
+                  <div className="space-y-6 pt-8 border-t border-white/20">
                     <div>
-                      <h5 className="font-roc font-bold text-primary mb-2">Challenge</h5>
-                      <p className="text-sm text-muted-foreground">
+                      <h5 className="font-roc font-bold text-white mb-2">Challenge</h5>
+                      <p className="text-sm text-white/70">
                         Sehr spezifisches Tech-Profil mit Startup-Erfahrung in der Wachstumsphase
                       </p>
                     </div>
                     <div>
-                      <h5 className="font-roc font-bold text-primary mb-2">Solution</h5>
-                      <p className="text-sm text-muted-foreground">
+                      <h5 className="font-roc font-bold text-white mb-2">Solution</h5>
+                      <p className="text-sm text-white/70">
                         Talent Algorithmus + direkter Approach von Senior-Level Kandidaten
                       </p>
                     </div>
