@@ -1,53 +1,92 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Search, Brain, Heart } from "lucide-react";
+import { useScrollReveal } from "@/hooks/use-scroll-animation";
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { Search, Brain, Heart, ArrowUpRight } from "lucide-react";
 
 const Services = () => {
+  useScrollReveal();
+
   const services = [
     {
       icon: <Search className="w-8 h-8" />,
       title: "Executive Search",
-      description: "Gezielte Suche nach Führungskräften und Spezialisten für strategische Positionen."
+      description: "Gezielte Suche nach Führungskräften und Spezialisten für strategische Positionen mit nachweislicher Erfolgsquote.",
+      feature: "95% Success Rate"
     },
     {
       icon: <Brain className="w-8 h-8" />,
       title: "Talent Algorithmus",
-      description: "Datengestützte Analyse zur Identifikation der besten Kandidaten für Ihr Unternehmen."
+      description: "Datengestützte Analyse zur präzisen Identifikation der besten Kandidaten für Ihr spezifisches Umfeld.",
+      feature: "AI-Powered Matching"
     },
     {
       icon: <Heart className="w-8 h-8" />,
       title: "Kultur-Matching",
-      description: "Präzise Abstimmung zwischen Unternehmenskultur und den Werten der Kandidaten."
+      description: "Tiefgreifende Abstimmung zwischen Unternehmenskultur und den Werten sowie Arbeitsweisen der Kandidaten.",
+      feature: "Cultural Fit Analysis"
     }
   ];
 
   return (
-    <section id="services" className="py-24 bg-muted/10">
+    <section id="services" className="py-32 bg-muted/20 overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-20">
-          <h2 className="editorial-heading text-primary mb-8 text-3xl md:text-4xl">
-            Unsere Leistungen
-          </h2>
-          <p className="editorial-subheading text-muted-foreground max-w-2xl mx-auto">
-            Drei bewährte Ansätze für nachhaltigen Recruiting-Erfolg
+        {/* Massive section title */}
+        <div className="scroll-reveal mb-20">
+          <div className="display-large text-primary text-center mb-8">
+            Services
+          </div>
+          <p className="editorial-subheading text-muted-foreground max-w-3xl mx-auto text-center">
+            Drei bewährte Ansätze für nachhaltigen Recruiting-Erfolg, 
+            optimiert für die moderne Arbeitswelt
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {services.map((service, index) => (
-            <Card key={index} className="border-0 shadow-sm hover-lift bg-card">
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 mx-auto bg-secondary/10 rounded-full flex items-center justify-center text-accent mb-4">
-                  {service.icon}
+            <Card 
+              key={index} 
+              className="scroll-reveal border-0 shadow-lg hover-lift bg-background/80 backdrop-blur-sm group cursor-pointer overflow-hidden"
+              style={{ animationDelay: `${index * 200}ms` }}
+            >
+              <CardHeader className="pb-4">
+                {/* Service badge */}
+                <div className="flex items-center justify-between mb-6">
+                  <div className="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center text-secondary group-hover:bg-secondary group-hover:text-primary smooth-transition">
+                    {service.icon}
+                  </div>
+                  <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-interactive group-hover:scale-110 smooth-transition" />
                 </div>
-                <CardTitle className="font-geometric text-xl">{service.title}</CardTitle>
+                
+                <h3 className="font-roc font-bold text-xl text-primary mb-2 group-hover:text-interactive smooth-transition">
+                  {service.title}
+                </h3>
+                
+                <div className="inline-flex items-center px-3 py-1 bg-interactive/10 rounded-full">
+                  <span className="text-xs font-geometric text-interactive font-semibold">
+                    {service.feature}
+                  </span>
+                </div>
               </CardHeader>
+              
               <CardContent>
-                <CardDescription className="font-geometric text-center leading-relaxed">
+                <p className="font-geometric leading-relaxed text-muted-foreground group-hover:text-foreground smooth-transition">
                   {service.description}
-                </CardDescription>
+                </p>
               </CardContent>
+              
+              {/* Hover effect background */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/0 to-interactive/0 group-hover:from-secondary/5 group-hover:to-interactive/5 smooth-transition rounded-lg" />
             </Card>
           ))}
+        </div>
+
+        {/* Call to action */}
+        <div className="text-center mt-16 scroll-reveal">
+          <p className="font-geometric text-muted-foreground mb-8">
+            Bereit für eine neue Art des Recruitings?
+          </p>
+          <button className="interactive-button">
+            Kostenlose Beratung anfordern
+          </button>
         </div>
       </div>
     </section>

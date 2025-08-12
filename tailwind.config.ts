@@ -58,6 +58,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				interactive: {
+					DEFAULT: 'hsl(var(--interactive))',
+					foreground: 'hsl(var(--interactive-foreground))',
+					hover: 'hsl(var(--interactive-hover))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
