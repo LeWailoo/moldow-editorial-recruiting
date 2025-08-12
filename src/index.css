@@ -33,10 +33,10 @@ All colors MUST be HSL.
     --accent: 56 100% 76.3%; /* Pastel yellow accent */
     --accent-foreground: 0 0% 6.7%;
 
-    /* Modern interactive colors */
-    --interactive: 263 70% 60%; /* Purple for CTAs */
-    --interactive-foreground: 0 0% 100%;
-    --interactive-hover: 263 70% 55%;
+    /* Modern interactive colors - using brand yellow */
+    --interactive: 56 100% 76.3%; /* Brand yellow for CTAs */
+    --interactive-foreground: 0 0% 6.7%; /* Dark text on yellow */
+    --interactive-hover: 56 100% 70%; /* Slightly darker yellow on hover */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
