@@ -11,24 +11,24 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 6.7%;
+    --background: 0 0% 6.7%; /* Deep charcoal #111111 */
+    --foreground: 0 0% 95%; /* Light text on dark background */
 
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 6.7%;
+    --card: 0 0% 12%; /* Slightly lighter grey for boxes */
+    --card-foreground: 0 0% 90%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 6.7%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 90%;
 
     /* moldow. brand colors */
-    --primary: 0 0% 6.7%; /* Deep charcoal #111111 */
-    --primary-foreground: 0 0% 100%;
+    --primary: 0 0% 95%; /* Light text for headings on dark bg */
+    --primary-foreground: 0 0% 6.7%;
 
     --secondary: 56 100% 76.3%; /* Pastel yellow #FFF589 */
     --secondary-foreground: 0 0% 6.7%;
 
-    --muted: 60 8% 46.9%; /* Muted olive-grey */
-    --muted-foreground: 60 3% 26.1%;
+    --muted: 0 0% 20%; /* Lighter grey for muted elements */
+    --muted-foreground: 0 0% 70%; /* Light grey text */
 
     --accent: 56 100% 76.3%; /* Pastel yellow accent */
     --accent-foreground: 0 0% 6.7%;
@@ -41,8 +41,8 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 60 9% 87.1%;
-    --input: 60 9% 87.1%;
+    --border: 0 0% 20%; /* Dark grey borders */
+    --input: 0 0% 15%; /* Darker input backgrounds */
     --ring: 56 100% 76.3%;
 
     --radius: 0.5rem;
