@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin, Linkedin, Twitter, ArrowUpRight } from "lucide-rea
 
 const Footer = () => {
   return (
-    <footer className="bg-primary text-white py-20 border-t border-white/10">
+    <footer className="bg-background text-white py-20 border-t border-white/10">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}

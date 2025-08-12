@@ -22,7 +22,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen relative overflow-hidden bg-primary">
+    <section className="min-h-screen relative overflow-hidden bg-background">
       {/* Background animated elements */}
       <div 
         className="absolute top-20 right-20 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"

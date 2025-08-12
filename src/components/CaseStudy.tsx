@@ -5,7 +5,7 @@ const CaseStudy = () => {
   useScrollReveal();
 
   return (
-    <section id="cases" className="py-32 bg-primary">
+    <section id="cases" className="py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}

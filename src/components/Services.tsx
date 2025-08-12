@@ -27,7 +27,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-32 bg-primary overflow-hidden">
+    <section id="services" className="py-32 bg-background overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Massive section title */}
         <div className="scroll-reveal mb-20">

@@ -5,7 +5,7 @@ const About = () => {
   useScrollReveal();
 
   return (
-    <section id="about" className="py-32 bg-primary overflow-hidden">
+    <section id="about" className="py-32 bg-background overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20 scroll-reveal">

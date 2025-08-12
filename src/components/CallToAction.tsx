@@ -5,7 +5,7 @@ const CallToAction = () => {
   useScrollReveal();
 
   return (
-    <section id="contact" className="py-32 bg-primary relative overflow-hidden">
+    <section id="contact" className="py-32 bg-background relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute top-20 left-20 w-64 h-64 bg-secondary/10 rounded-full blur-3xl" />
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-interactive/10 rounded-full blur-3xl" />
