@@ -16,7 +16,7 @@ const Hero = () => {
           moldow.
         </div>
         
-        <h1 className="editorial-heading text-white mb-6">
+        <h1 className="editorial-heading text-white mb-6 uppercase">
           Es gibt einen Unterschied zwischen Suchen und Finden.
         </h1>
         

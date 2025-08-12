@@ -23,8 +23,8 @@ const Services = () => {
   return (
     <section id="services" className="py-24 bg-muted/10">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="editorial-heading text-primary mb-6">
+        <div className="text-center mb-20">
+          <h2 className="editorial-heading text-primary mb-8 text-3xl md:text-4xl">
             Unsere Leistungen
           </h2>
           <p className="editorial-subheading text-muted-foreground max-w-2xl mx-auto">

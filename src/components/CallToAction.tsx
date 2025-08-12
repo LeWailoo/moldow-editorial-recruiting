@@ -5,7 +5,7 @@ const CallToAction = () => {
     <section id="contact" className="py-24 bg-primary">
       <div className="container mx-auto px-6 text-center">
         <div className="max-w-3xl mx-auto">
-          <h2 className="editorial-heading text-secondary mb-6">
+          <h2 className="editorial-heading text-secondary mb-8 text-3xl md:text-5xl">
             Bereit für außergewöhnliche Talente?
           </h2>
           

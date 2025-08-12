@@ -5,8 +5,8 @@ const About = () => {
     <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="space-y-6">
-            <h2 className="editorial-heading text-primary">
+          <div className="space-y-8">
+            <h2 className="editorial-heading text-primary text-3xl md:text-4xl">
               Unsere Mission
             </h2>
             <p className="editorial-subheading text-muted-foreground leading-relaxed">

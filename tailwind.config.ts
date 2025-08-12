@@ -22,6 +22,7 @@ export default {
 				sans: ['Inter', 'sans-serif'],
 				serif: ['Playfair Display', 'serif'],
 				geometric: ['Inter', 'sans-serif'],
+				roc: ['Roc Grotesk', 'Inter', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

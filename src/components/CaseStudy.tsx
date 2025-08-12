@@ -14,7 +14,7 @@ const CaseStudy = () => {
                 </span>
               </div>
               
-              <h3 className="editorial-heading text-3xl text-primary">
+              <h3 className="editorial-heading text-3xl md:text-4xl text-primary leading-tight">
                 "In nur 4 Wochen zur perfekten Besetzung"
               </h3>
               
