@@ -25,28 +25,11 @@ const CallToAction = () => {
             auf das nächste Level bringen. Kostenlose Erstberatung inklusive.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          <div className="flex justify-center">
             <button className="bg-secondary text-primary px-12 py-4 rounded-full font-geometric font-bold text-lg hover:scale-105 smooth-transition shadow-2xl flex items-center gap-3">
               Kostenloses Gespräch vereinbaren
               <ArrowRight className="w-5 h-5" />
             </button>
-            
-            <div className="flex items-center gap-4 text-white/80">
-              <div className="flex -space-x-2">
-                <div className="w-10 h-10 bg-secondary rounded-full flex items-center justify-center text-primary font-bold text-sm">
-                  S
-                </div>
-                <div className="w-10 h-10 bg-interactive rounded-full flex items-center justify-center text-white font-bold text-sm">
-                  M
-                </div>
-                <div className="w-10 h-10 bg-muted rounded-full flex items-center justify-center text-primary font-bold text-sm">
-                  A
-                </div>
-              </div>
-              <span className="font-geometric text-sm">
-                50+ CEOs vertrauen moldow.
-              </span>
-            </div>
           </div>
 
           {/* Contact info quick access */}
@@ -54,14 +37,14 @@ const CallToAction = () => {
             <div className="grid md:grid-cols-3 gap-8 text-white/80">
               <div>
                 <div className="font-roc font-bold text-secondary mb-2">Email</div>
-                <a href="mailto:hello@moldow.de" className="font-geometric hover:text-secondary smooth-transition">
-                  hello@moldow.de
+                <a href="mailto:info@moldowidentity.com" className="font-geometric hover:text-secondary smooth-transition">
+                  info@moldowidentity.com
                 </a>
               </div>
               <div>
                 <div className="font-roc font-bold text-secondary mb-2">Telefon</div>
-                <a href="tel:+49211123456" className="font-geometric hover:text-secondary smooth-transition">
-                  +49 211 123 456
+                <a href="tel:+4917661741310" className="font-geometric hover:text-secondary smooth-transition">
+                  +49 176 61741310
                 </a>
               </div>
               <div>
