@@ -69,19 +69,6 @@ const About = () => {
               </div>
             </div>
 
-            {/* Key Facts */}
-            <div className="pt-6 border-t border-white/20">
-              <div className="grid grid-cols-2 gap-6">
-                <div>
-                  <div className="text-2xl font-bold text-secondary mb-1">100+</div>
-                  <div className="text-sm font-geometric text-white/70">Erfolgreiche Placements</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-secondary mb-1">98%</div>
-                  <div className="text-sm font-geometric text-white/70">Zufriedenheitsrate</div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
