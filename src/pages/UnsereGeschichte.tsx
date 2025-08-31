@@ -10,7 +10,7 @@ const UnsereGeschichte = () => {
           <div className="container mx-auto px-6 max-w-6xl">
             {/* Hero section */}
             <div className="text-center mb-20">
-              <h1 className="display-large text-white mb-8">
+              <h1 className="display-large text-secondary mb-8">
                 Unsere Geschichte
               </h1>
             </div>
