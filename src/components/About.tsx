@@ -38,10 +38,35 @@ const About = () => {
                 <span className="font-serif italic text-secondary">neu gedacht</span>.
               </h2>
               
-              <p className="font-serif text-lg text-white/80 leading-relaxed">
-                moldow. steht für Recruiting mit Haltung. Wir bringen Unternehmen und Menschen zusammen, 
+              <p className="font-serif text-lg text-white/80 leading-relaxed mb-8">
+                Wir hören zu - bevor wir verbinden. Wir bringen Unternehmen und Menschen zusammen, 
                 die wirklich zueinander passen – datenbasiert, persönlich und nachhaltig.
               </p>
+
+              {/* Services Overview */}
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4">
+                  <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-geometric font-semibold text-white mb-2">Top-Talente finden</h3>
+                    <p className="font-serif text-white/70 leading-relaxed">
+                      Durch Active Sourcing & gezielte Direktansprache auf LinkedIn identifizieren wir 
+                      hochqualifizierte Fach- und Führungskräfte.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-4">
+                  <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-geometric font-semibold text-white mb-2">Effiziente HR-Strukturen schaffen</h3>
+                    <p className="font-serif text-white/70 leading-relaxed">
+                      Mit individuellen HR Solutions analysieren wir den Personalbedarf und 
+                      optimieren die Prozesse unserer Kunden.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Key Facts */}
