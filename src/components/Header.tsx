@@ -19,6 +19,9 @@ const Header = () => {
           <a href="#cases" className="font-geometric font-medium smooth-transition hover:text-secondary">
             Erfolge
           </a>
+          <a href="/unsere-geschichte" className="font-geometric font-medium smooth-transition hover:text-secondary">
+            Unsere Geschichte
+          </a>
         </nav>
         
         <Button className="interactive-button hidden md:flex items-center gap-2">

@@ -79,15 +79,6 @@ const Services = () => {
           ))}
         </div>
 
-        {/* Call to action */}
-        <div className="text-center mt-16 scroll-reveal">
-          <p className="font-geometric text-white/80 mb-8">
-            Bereit für eine neue Art des Recruitings?
-          </p>
-          <button className="interactive-button">
-            Kostenlose Beratung anfordern
-          </button>
-        </div>
       </div>
     </section>
   );
