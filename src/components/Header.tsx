@@ -16,9 +16,6 @@ const Header = () => {
           <a href="/#about" className="font-geometric font-medium smooth-transition hover:text-secondary">
             Über uns
           </a>
-          <a href="/#cases" className="font-geometric font-medium smooth-transition hover:text-secondary">
-            Erfolge
-          </a>
           <a href="/unsere-geschichte" className="font-geometric font-medium smooth-transition hover:text-secondary">
             Unsere Geschichte
           </a>

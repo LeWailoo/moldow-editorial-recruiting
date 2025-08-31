@@ -47,12 +47,6 @@ const Hero = () => {
                 Talente finden
                 <ArrowRight className="w-5 h-5 ml-3" />
               </Button>
-              <Button 
-                variant="outline" 
-                className="px-8 py-4 text-lg font-geometric font-medium border-white/30 text-white hover:bg-white/10"
-              >
-                Über uns
-              </Button>
             </div>
           </div>
         </div>
