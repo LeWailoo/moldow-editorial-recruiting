@@ -77,7 +77,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="font-geometric text-white/60 text-sm">
-            © 2024 moldow. Alle Rechte vorbehalten.
+            © 2024 moldow Identity GmbH. Alle Rechte vorbehalten.
           </p>
           
           <div className="flex gap-8">
