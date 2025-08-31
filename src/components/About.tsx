@@ -5,70 +5,57 @@ const About = () => {
   useScrollReveal();
 
   return (
-    <section id="about" className="py-32 bg-background overflow-hidden">
+    <section id="about" className="py-24 bg-background">
       <div className="container mx-auto px-6">
-        {/* Section Header */}
-        <div className="text-center mb-20 scroll-reveal">
-          <div className="display-large text-white mb-8">
-            Mission
-          </div>
-          <p className="editorial-subheading text-white/80 max-w-3xl mx-auto">
-            Bei moldow. verstehen wir, dass außergewöhnliche Unternehmen außergewöhnliche Menschen brauchen
-          </p>
-        </div>
-
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
-          {/* Left: Content */}
-          <div className="space-y-8 scroll-reveal">
-            <div className="space-y-6">
-              <h2 className="editorial-heading text-white text-3xl md:text-4xl">
-                Unser Ansatz geht über traditionelle Recruiting-Methoden hinaus
-              </h2>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left: Image */}
+          <div className="relative scroll-reveal">
+            <div className="relative">
+              <img 
+                src={teamImage} 
+                alt="moldow. Team - Recruiting mit Haltung"
+                className="w-full aspect-[4/3] object-cover rounded-2xl shadow-2xl"
+              />
               
-              <p className="text-lg text-white/80 leading-relaxed">
-                Wir kombinieren menschliche Intuition mit datengestützten Insights, 
-                um die perfekte Passung zwischen Talent und Kultur zu schaffen.
-              </p>
-              
-              <p className="font-geometric text-white/70 leading-relaxed">
-                Unser Team investiert Zeit, um sowohl Ihre Unternehmenskultur als auch 
-                die Aspirationen der Kandidaten tiefgreifend zu verstehen. Das Ergebnis: 
-                nachhaltige Erfolge für beide Seiten.
-              </p>
-            </div>
-
-            {/* Key metrics */}
-            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/20">
-              <div>
-                <div className="text-2xl font-bold text-secondary mb-2">15+ Jahre</div>
-                <div className="text-sm text-white/70">Erfahrung im Executive Search</div>
-              </div>
-              <div>
-                <div className="text-2xl font-bold text-secondary mb-2">98%</div>
-                <div className="text-sm text-white/70">Kandidaten-Zufriedenheit</div>
-              </div>
+              {/* Warm overlay for filmlook */}
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-background/30 rounded-2xl" />
             </div>
           </div>
           
-          {/* Right: Image with modern treatment */}
-          <div className="relative scroll-reveal">
-            <div className="relative group">
-              <img 
-                src={teamImage} 
-                alt="moldow. Team bei der strategischen Planung"
-                className="w-full aspect-[4/3] object-cover rounded-2xl shadow-2xl group-hover:scale-105 smooth-transition"
-              />
-              
-              {/* Overlay elements */}
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-transparent rounded-2xl" />
-              
-              {/* Floating badge */}
-              <div className="absolute -bottom-6 -left-6 bg-secondary text-primary px-6 py-3 rounded-full font-geometric font-bold shadow-xl">
-                Award-winning Team
+          {/* Right: Content */}
+          <div className="space-y-8 scroll-reveal lg:pl-8">
+            {/* Section Label */}
+            <div className="space-y-6">
+              <div>
+                <span className="font-geometric text-sm uppercase tracking-wider text-secondary">
+                  Unsere Mission
+                </span>
+                <div className="w-12 h-px bg-secondary mt-3" />
               </div>
               
-              {/* Decorative elements */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-interactive/20 rounded-full blur-lg" />
+              <h2 className="font-geometric font-bold text-4xl md:text-5xl text-white leading-tight">
+                Talente und Unternehmen –{' '}
+                <span className="font-serif italic text-secondary">neu gedacht</span>.
+              </h2>
+              
+              <p className="font-serif text-lg text-white/80 leading-relaxed">
+                moldow. steht für Recruiting mit Haltung. Wir bringen Unternehmen und Menschen zusammen, 
+                die wirklich zueinander passen – datenbasiert, persönlich und nachhaltig.
+              </p>
+            </div>
+
+            {/* Key Facts */}
+            <div className="pt-6 border-t border-white/20">
+              <div className="grid grid-cols-2 gap-6">
+                <div>
+                  <div className="text-2xl font-bold text-secondary mb-1">100+</div>
+                  <div className="text-sm font-geometric text-white/70">Erfolgreiche Placements</div>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-secondary mb-1">98%</div>
+                  <div className="text-sm font-geometric text-white/70">Zufriedenheitsrate</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

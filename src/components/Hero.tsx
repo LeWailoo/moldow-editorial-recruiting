@@ -1,135 +1,58 @@
-import { useScrollAnimation, useScrollReveal } from "@/hooks/use-scroll-animation";
+import { useScrollReveal } from "@/hooks/use-scroll-animation";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
-import { useEffect, useState } from "react";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
-  const scrollY = useScrollAnimation();
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-  
   useScrollReveal();
-
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      setMousePosition({
-        x: (e.clientX / window.innerWidth) * 20,
-        y: (e.clientY / window.innerHeight) * 20,
-      });
-    };
-
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
 
   return (
     <section className="min-h-screen relative overflow-hidden bg-background">
-      {/* Background animated elements */}
-      <div 
-        className="absolute top-20 right-20 w-64 h-64 bg-secondary/5 rounded-full blur-3xl"
-        style={{
-          transform: `translate(${mousePosition.x}px, ${mousePosition.y}px)`,
-          transition: 'transform 0.3s ease-out'
-        }}
-      />
-      <div 
-        className="absolute bottom-20 left-20 w-96 h-96 bg-interactive/5 rounded-full blur-3xl"
-        style={{
-          transform: `translate(${-mousePosition.x}px, ${-mousePosition.y}px)`,
-          transition: 'transform 0.3s ease-out'
-        }}
-      />
+      {/* Subtle background texture */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-card/20" />
+      
+      {/* Floating elements for subtle animation */}
+      <div className="absolute top-20 right-20 w-64 h-64 bg-secondary/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-20 w-96 h-96 bg-secondary/3 rounded-full blur-3xl" />
 
-      <div className="container mx-auto px-6 pt-32 pb-20">
-        <div className="grid lg:grid-cols-2 gap-16 items-center min-h-[80vh]">
-          {/* Left: Massive Typography */}
-          <div className="space-y-8 text-overlap">
-            <div className="moldow-logo text-4xl mb-8 scroll-reveal">
-              moldow.
-            </div>
-            
-            {/* Massive display text like Power Digital */}
-            <div className="relative scroll-reveal">
-              <h1 className="display-massive uppercase leading-none text-white">
-                Find
-              </h1>
-              <div 
-                className="absolute -right-4 top-1/2 -translate-y-1/2 text-2xl md:text-4xl font-geometric text-white/60"
-                style={{ transform: `translateY(${scrollY * -0.1}px)` }}
-              >
-                not search
-              </div>
-            </div>
-            
+      <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
+        <div className="max-w-4xl">
+          {/* Logo */}
+          <div className="moldow-logo text-4xl mb-16 scroll-reveal">
+            moldow.
+          </div>
+          
+          {/* Main Content */}
+          <div className="space-y-12">
+            {/* Headline */}
             <div className="scroll-reveal">
-              <p className="editorial-subheading text-white/90 max-w-lg mb-8">
-                Es gibt einen Unterschied zwischen Suchen und Finden. 
-                Wir verbinden Unternehmen mit außergewöhnlichen Talenten durch 
-                präzise Analyse und kulturelle Passung.
+              <h1 className="font-geometric font-bold text-5xl md:text-7xl lg:text-8xl leading-tight text-white tracking-tight">
+                Es gibt einen Unterschied zwischen{' '}
+                <span className="italic font-serif text-secondary">Suchen</span>{' '}
+                und{' '}
+                <span className="italic font-serif text-secondary">Finden</span>.
+              </h1>
+            </div>
+            
+            {/* Subheadline */}
+            <div className="scroll-reveal">
+              <div className="w-16 h-px bg-secondary mb-6" />
+              <p className="font-serif text-xl md:text-2xl text-white/80 leading-relaxed max-w-2xl">
+                Wir verbinden Unternehmen mit außergewöhnlichen Talenten.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 scroll-reveal">
-              <Button className="interactive-button flex items-center gap-3">
-                Start now
-                <ArrowRight className="w-5 h-5" />
+            {/* Call-to-Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 scroll-reveal pt-8">
+              <Button className="interactive-button px-8 py-4 text-lg font-geometric font-semibold">
+                Talente finden
+                <ArrowRight className="w-5 h-5 ml-3" />
               </Button>
-              <Button variant="outline" className="flex items-center gap-3 group">
-                <Play className="w-5 h-5 group-hover:scale-110 smooth-transition" />
-                Watch story
+              <Button 
+                variant="outline" 
+                className="px-8 py-4 text-lg font-geometric font-medium border-white/30 text-white hover:bg-white/10"
+              >
+                Über uns
               </Button>
-            </div>
-          </div>
-
-          {/* Right: Interactive Content */}
-          <div className="relative scroll-reveal">
-            <div className="relative bg-card/50 backdrop-blur-sm rounded-3xl p-12 border border-white/10 hover-lift">
-              <div className="space-y-6">
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="w-3 h-3 bg-secondary rounded-full animate-pulse" />
-                  <span className="font-geometric text-sm uppercase tracking-wider text-white/70">
-                    World-class recruiting
-                  </span>
-                </div>
-                
-                <h3 className="display-large text-3xl text-white mb-6">
-                  A tech-enabled growth recruiting agency
-                </h3>
-                
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <div className="text-3xl font-bold text-secondary">95%</div>
-                    <div className="text-sm text-white/70">Success Rate</div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="text-3xl font-bold text-secondary">4 Wo</div>
-                    <div className="text-sm text-white/70">Avg. Time</div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="text-3xl font-bold text-secondary">500+</div>
-                    <div className="text-sm text-white/70">Placements</div>
-                  </div>
-                  <div className="space-y-2">
-                    <div className="text-3xl font-bold text-secondary">50+</div>
-                    <div className="text-sm text-white/70">Companies</div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Floating elements */}
-              <div 
-                className="absolute -top-4 -right-4 w-8 h-8 bg-secondary rounded-full"
-                style={{
-                  transform: `translate(${mousePosition.x * 0.5}px, ${mousePosition.y * 0.5}px)`,
-                  transition: 'transform 0.5s ease-out'
-                }}
-              />
-              <div 
-                className="absolute -bottom-6 -left-6 w-12 h-12 bg-interactive/20 rounded-full blur-sm"
-                style={{
-                  transform: `translate(${-mousePosition.x * 0.3}px, ${-mousePosition.y * 0.3}px)`,
-                  transition: 'transform 0.7s ease-out'
-                }}
-              />
             </div>
           </div>
         </div>
