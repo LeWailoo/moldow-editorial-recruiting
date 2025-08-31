@@ -11,8 +11,8 @@ const Footer = () => {
               moldow.
             </div>
             <p className="font-geometric text-white/80 leading-relaxed text-lg max-w-md">
-              Connecting exceptional companies with exceptional talent through 
-              data-driven insights and cultural alignment.
+              We believe in quality over quantity, in details over shortcuts, 
+              and in relationships over transactions.
             </p>
             <div className="flex gap-4">
               <a 
