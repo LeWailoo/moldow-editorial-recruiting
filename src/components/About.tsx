@@ -34,8 +34,8 @@ const About = () => {
               </div>
               
               <h2 className="font-geometric font-bold text-4xl md:text-5xl text-white leading-tight">
-                Talente und Unternehmen –{' '}
-                <span className="font-serif italic text-secondary">neu gedacht</span>.
+                Wir hören zu -{' '}
+                <span className="font-serif italic text-secondary">bevor wir verbinden</span>.
               </h2>
               
               <p className="font-serif text-lg text-white/80 leading-relaxed mb-8">
