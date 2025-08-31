@@ -34,12 +34,12 @@ const About = () => {
               </div>
               
               <h2 className="font-geometric font-bold text-4xl md:text-5xl text-white leading-tight">
-                Wir hören zu -{' '}
-                <span className="font-serif italic text-secondary">bevor wir verbinden</span>.
+                Talente und Unternehmen –{' '}
+                <span className="font-serif italic text-secondary">neu gedacht</span>.
               </h2>
               
               <p className="font-serif text-lg text-white/80 leading-relaxed mb-8">
-                Wir hören zu - bevor wir verbinden. Wir bringen Unternehmen und Menschen zusammen, 
+              Wir bringen Unternehmen und Menschen zusammen, 
                 die wirklich zueinander passen – datenbasiert, persönlich und nachhaltig.
               </p>
 
